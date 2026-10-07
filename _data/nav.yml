@@ -1,0 +1,40 @@
+# Manual chapters in reading order. `slug` is the file name in en/ and de/.
+- slug: index
+  en: Overview
+  de: Überblick
+- slug: getting-started
+  en: Getting started
+  de: Erste Schritte
+- slug: gallery
+  en: Gallery and projects
+  de: Galerie und Projekte
+- slug: canvas
+  en: The canvas
+  de: Die Leinwand
+- slug: tools
+  en: Drawing tools
+  de: Zeichenwerkzeuge
+- slug: selection
+  en: Selecting and transforming
+  de: Auswählen und Transformieren
+- slug: brushes-colours
+  en: Brushes and colours
+  de: Pinsel und Farben
+- slug: layers
+  en: Layers and objects
+  de: Ebenen und Objekte
+- slug: grids-guides
+  en: Grids, guides and backgrounds
+  de: Raster, Hilfslinien und Hintergründe
+- slug: import-export
+  en: Import and export
+  de: Import und Export
+- slug: settings
+  en: Settings
+  de: Einstellungen
+- slug: shortcuts
+  en: Shortcuts and gestures
+  de: Tastenkürzel und Gesten
+- slug: help
+  en: Help and troubleshooting
+  de: Hilfe und Problemlösung

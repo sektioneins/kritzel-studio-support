@@ -1,0 +1,84 @@
+<!doctype html>
+{%- assign lang = page.lang | default: 'en' -%}
+{%- if lang == 'en' %}{% assign other = 'de' %}{% else %}{% assign other = 'en' %}{% endif -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign slug = page.name | remove: '.md' | remove: '.html' -%}
+{%- capture other_path %}/{{ other }}/{% unless slug == 'index' %}{{ slug }}.html{% endunless %}{% endcapture -%}
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if slug == 'index' %}Kritzel Studio · {{ t.manual }}{% else %}{{ page.title }} · Kritzel Studio{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="alternate" hreflang="{{ other }}" href="{{ other_path | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip" href="#content">{{ t.skip }}</a>
+  <header class="topbar">
+    <a class="brand" href="{{ '/' | append: lang | append: '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="" width="32" height="32">
+      <span>Kritzel Studio <small>{{ t.manual }}</small></span>
+    </a>
+    <nav class="topbar-links">
+      <a class="lang-switch" href="{{ other_path | relative_url }}" hreflang="{{ other }}" lang="{{ other }}" title="{{ t.switch_title }}">{{ t.switch_label }}</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">{{ t.menu }}</button>
+    </nav>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <p class="sidebar-title">{{ t.contents }}</p>
+      <ol class="toc">
+        {%- for item in site.data.nav %}
+        {%- capture href %}/{{ lang }}/{% unless item.slug == 'index' %}{{ item.slug }}.html{% endunless %}{% endcapture %}
+        <li{% if item.slug == slug %} class="current"{% endif %}><a href="{{ href | relative_url }}"{% if item.slug == slug %} aria-current="page"{% endif %}>{{ item[lang] }}</a></li>
+        {%- endfor %}
+      </ol>
+      <p class="sidebar-support"><a href="{{ site.support_url }}">{{ t.support }}</a></p>
+    </aside>
+
+    <main id="content" class="content">
+      <article>
+        {% unless slug == 'index' %}<h1>{{ page.title }}</h1>{% endunless %}
+        {{ content }}
+      </article>
+
+      {%- assign prev = nil -%}{%- assign next = nil -%}
+      {%- for item in site.data.nav -%}
+        {%- if item.slug == slug -%}
+          {%- assign i = forloop.index0 -%}
+          {%- if i > 0 %}{% assign pi = i | minus: 1 %}{% assign prev = site.data.nav[pi] %}{% endif -%}
+          {%- assign ni = i | plus: 1 -%}{%- assign next = site.data.nav[ni] -%}
+        {%- endif -%}
+      {%- endfor %}
+      <nav class="pager">
+        {%- if prev %}
+        {%- capture href %}/{{ lang }}/{% unless prev.slug == 'index' %}{{ prev.slug }}.html{% endunless %}{% endcapture %}
+        <a class="prev" href="{{ href | relative_url }}"><small>{{ t.previous }}</small>{{ prev[lang] }}</a>
+        {%- endif %}
+        {%- if next %}
+        <a class="next" href="{{ '/' | append: lang | append: '/' | append: next.slug | append: '.html' | relative_url }}"><small>{{ t.next }}</small>{{ next[lang] }}</a>
+        {%- endif %}
+      </nav>
+
+      <footer class="footer">
+        <p>{{ t.footer }} <a href="{{ site.website_url }}">{{ t.website }}</a> · <a href="{{ site.support_url }}">{{ t.support }}</a></p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var btn = document.querySelector('.menu-toggle');
+      var bar = document.getElementById('sidebar');
+      btn.addEventListener('click', function () {
+        var open = bar.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
+</html>

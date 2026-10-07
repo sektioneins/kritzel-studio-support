@@ -1,0 +1,13 @@
+{%- comment -%}
+  Screenshot with caption. Parameters:
+    src      file name inside the page's language folder img/ (e.g. "gallery.webp")
+    alt      alternative text
+    caption  optional caption (Markdown inline is not processed, plain text)
+    size     optional: "narrow" for dialogs and panels, "tall" for portrait crops
+{%- endcomment -%}
+<figure class="shot{% if include.size %} {{ include.size }}{% endif %}">
+  <a href="img/{{ include.src }}"><img src="img/{{ include.src }}" alt="{{ include.alt | escape }}" loading="lazy"></a>
+  {%- if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif %}
+</figure>

@@ -1,0 +1,25 @@
+# Strings used by the layout, per language.
+en:
+  manual: User manual
+  contents: Contents
+  previous: Previous
+  next: Next
+  switch_label: Deutsch
+  switch_title: Dieses Handbuch auf Deutsch lesen
+  support: Report a bug or request a feature
+  website: Website
+  menu: Menu
+  skip: Skip to content
+  footer: Kritzel Studio is made by SektionEins GmbH.
+de:
+  manual: Handbuch
+  contents: Inhalt
+  previous: Zurück
+  next: Weiter
+  switch_label: English
+  switch_title: Read this manual in English
+  support: Fehler melden oder Funktion vorschlagen
+  website: Webseite
+  menu: Menü
+  skip: Zum Inhalt springen
+  footer: Kritzel Studio wird von der SektionEins GmbH entwickelt.
