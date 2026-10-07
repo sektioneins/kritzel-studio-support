@@ -65,7 +65,8 @@
       </nav>
 
       <footer class="footer">
-        <p>{{ t.footer }} <a href="{{ site.website_url }}">{{ t.website }}</a> · <a href="{{ site.support_url }}">{{ t.support }}</a> · <a href="{{ t.imprint_url }}">{{ t.imprint }}</a></p>
+        {%- capture company %}<a href="{{ t.company_url }}">SektionEins GmbH</a>{% endcapture %}
+        <p>{{ t.footer | replace: 'SektionEins GmbH', company }} <a href="{{ site.website_url }}">{{ t.website }}</a> · <a href="{{ site.support_url }}">{{ t.support }}</a> · <a href="{{ t.imprint_url }}">{{ t.imprint }}</a></p>
       </footer>
     </main>
   </div>

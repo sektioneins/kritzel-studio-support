@@ -11,6 +11,7 @@ en:
   menu: Menu
   skip: Skip to content
   footer: Kritzel Studio is made by SektionEins GmbH.
+  company_url: https://sektioneins.de/en/
   imprint: Imprint
   imprint_url: https://sektioneins.de/en/impressum.html
 de:
@@ -25,5 +26,6 @@ de:
   menu: Menü
   skip: Zum Inhalt springen
   footer: Kritzel Studio wird von der SektionEins GmbH entwickelt.
+  company_url: https://sektioneins.de/
   imprint: Impressum
   imprint_url: https://sektioneins.de/impressum.html
