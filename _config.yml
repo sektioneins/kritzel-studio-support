@@ -2,8 +2,8 @@
 # Local preview: see README.md.
 title: Kritzel Studio
 description: User manual for Kritzel Studio, the vector drawing app for tablets and desktop.
-url: https://sektioneins.github.io
-baseurl: /kritzel-studio-support
+url: https://kritzel-studio-docs.s1apps.de
+baseurl: ""
 markdown: kramdown
 kramdown:
   input: GFM

@@ -3,11 +3,11 @@
 This repository is the public support home of **Kritzel Studio**, the vector drawing app for tablets and desktop by SektionEins GmbH.
 
 - **Bug reports and feature requests:** please open an [issue](https://github.com/sektioneins/kritzel-studio-support/issues). Mention your device, operating system and the app version (shown under 'About Kritzel Studio').
-- **User manual:** <https://sektioneins.github.io/kritzel-studio-support/>, in English and German.
+- **User manual:** <https://kritzel-studio-docs.s1apps.de/>, in English and German.
 
 ## The manual
 
-The manual is a small Jekyll site published with GitHub Pages straight from the `gh-pages` branch (Settings › Pages › Deploy from a branch › `gh-pages` / root). There is no build step to run; GitHub builds it on every push to `gh-pages`.
+The manual is a small Jekyll site published with GitHub Pages straight from the `gh-pages` branch (Settings › Pages › Deploy from a branch › `gh-pages` / root), served under the custom domain in `CNAME`. There is no build step to run; GitHub builds it on every push to `gh-pages`.
 
 ```
 _config.yml         site settings (baseurl, support and website links, app version)
@@ -33,7 +33,7 @@ English pages use British English, German pages address the reader as "Sie" and 
 ```sh
 gem install --user-install jekyll webrick kramdown-parser-gfm
 jekyll serve
-# open http://127.0.0.1:4000/kritzel-studio-support/
+# open http://127.0.0.1:4000/
 ```
 
 GitHub Pages builds with Jekyll 3.10; the site only uses features that work the same in Jekyll 3 and 4.
