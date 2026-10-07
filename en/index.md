@@ -8,7 +8,7 @@ description: The Kritzel Studio user manual. Learn how to draw, organise project
 Kritzel Studio is a vector drawing app for tablets and desktop computers. Every stroke you draw stays an editable object: you can select it later, move it, change its colour or width, edit its points or cut it in two. The app responds to stylus pressure, has a set of pens, pencils and markers, and exports to PNG, JPG, SVG and PDF.
 {: .lead}
 
-{% include fig.html src="canvas.webp" alt="The Kritzel Studio canvas with a landscape sketch, the tool rail on the left and the toolbar at the top" caption="The canvas on an Android tablet: tool rail on the left, toolbar along the top." %}
+{% include fig.html src="canvas.webp" alt="The Kritzel Studio canvas with a landscape sketch, the tool rail on the left and the toolbar at the top" caption="The canvas: tool rail on the left, toolbar along the top." %}
 
 ## What you can do with it
 
@@ -27,7 +27,7 @@ Kritzel Studio runs on tablets and desktop computers. Phones are not supported.
 | Mac | macOS 12 Monterey |
 | Windows PC | Windows 10 |
 
-The screenshots in this manual were taken on an Android tablet in landscape orientation with the dark theme. On a Mac or PC the screens look the same, except that the property panel is always docked on the right and right-clicking opens context menus.
+The screenshots in this manual show the app in landscape orientation with the dark theme. The screens look the same on every platform, except that on a Mac or PC the property panel is always docked on the right and right-clicking opens context menus.
 
 ## Conventions in this manual
 

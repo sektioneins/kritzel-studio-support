@@ -8,7 +8,7 @@ description: Das Handbuch zu Kritzel Studio. Zeichnen, Projekte organisieren, mi
 Kritzel Studio ist eine Vektor-Zeichen-App für Tablets und Desktop-Rechner. Jeder Strich, den Sie zeichnen, bleibt ein eigenes Objekt: Sie können ihn später auswählen, verschieben, umfärben, dünner machen, seine Punkte bearbeiten oder ihn in zwei Teile schneiden. Die App reagiert auf den Stiftdruck, bringt Stifte, Bleistifte und Marker mit und exportiert nach PNG, JPG, SVG und PDF.
 {: .lead}
 
-{% include fig.html src="canvas.webp" alt="Die Leinwand von Kritzel Studio mit einer Landschaftsskizze, links die Werkzeugleiste, oben die Symbolleiste" caption="Die Leinwand auf einem Android-Tablet: links die Werkzeugleiste, oben die Symbolleiste." %}
+{% include fig.html src="canvas.webp" alt="Die Leinwand von Kritzel Studio mit einer Landschaftsskizze, links die Werkzeugleiste, oben die Symbolleiste" caption="Die Leinwand: links die Werkzeugleiste, oben die Symbolleiste." %}
 
 ## Was Sie damit machen können
 
@@ -27,7 +27,7 @@ Kritzel Studio läuft auf Tablets und Desktop-Rechnern. Smartphones werden nicht
 | Mac | macOS 12 Monterey |
 | Windows-PC | Windows 10 |
 
-Die Bildschirmfotos in diesem Handbuch stammen von einem Android-Tablet im Querformat mit dunklem Design. Auf einem Mac oder PC sehen die Bildschirme genauso aus, nur ist dort das Eigenschaftenfeld immer rechts angedockt, und ein Rechtsklick öffnet Kontextmenüs.
+Die Bildschirmfotos in diesem Handbuch zeigen die App im Querformat mit dunklem Design. Auf allen Plattformen sehen die Bildschirme gleich aus, nur ist auf einem Mac oder PC das Eigenschaftenfeld immer rechts angedockt, und ein Rechtsklick öffnet Kontextmenüs.
 
 ## Schreibweisen in diesem Handbuch
 
