@@ -7,7 +7,7 @@ This repository is the public support home of **Kritzel Studio**, the vector dra
 
 ## The manual
 
-The manual is a small Jekyll site published with GitHub Pages straight from the `main` branch (Settings › Pages › Deploy from a branch › `main` / root). There is no build step to run; GitHub builds it on every push.
+The manual is a small Jekyll site published with GitHub Pages straight from the `gh-pages` branch (Settings › Pages › Deploy from a branch › `gh-pages` / root). There is no build step to run; GitHub builds it on every push to `gh-pages`.
 
 ```
 _config.yml         site settings (baseurl, support and website links, app version)
